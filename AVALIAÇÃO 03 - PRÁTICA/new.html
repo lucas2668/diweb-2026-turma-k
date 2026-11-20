@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravCo - Novo Usuário</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">TravCo</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ofertas</a></li>
+                <li><a href="produto.html">Destinos</a></li>
+                <li><a href="produto.html">Pacotes</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="login.html"><i class="fa-solid fa-user"></i> Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2><i class="fa-solid fa-user-plus"></i> Novo Usuário</h2>
+            <form action="login.html" method="get">
+                <div class="form-group">
+                    <input type="email" class="input-line" placeholder="Informe o seu e-mail" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="input-line" placeholder="Informe o seu password" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="input-line" placeholder="Informe o seu nome" required>
+                </div>
+                <div class="form-group">
+                    <select class="select-box" name="perfil">
+                        <option value="visitante" selected>Visitante</option>
+                        <option value="cliente">Cliente</option>
+                        <option value="agente">Agente de Viagens</option>
+                    </select>
+                </div>
+                <div class="form-group radio-group">
+                    <label>
+                        <input type="radio" name="preferencia" value="internacional" checked> Internacional
+                    </label>
+                    <label>
+                        <input type="radio" name="preferencia" value="nacional"> Nacional
+                    </label>
+                    <label>
+                        <input type="radio" name="preferencia" value="ambos"> Nacional e internacional
+                    </label>
+                </div>
+                <div class="avatar-upload">
+                    <div class="avatar-circle">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <input type="file" accept="image/*">
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn-dark">
+                        <i class="fa-solid fa-user-plus"></i> Criar conta
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer id="contato">
+        <div class="footer-top">
+            <span class="logo">TravCo</span>
+            <p>A TravCo é uma agência de viagens que oferece as melhores ofertas e pacotes para você viajar pelo mundo.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 TravCo. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
